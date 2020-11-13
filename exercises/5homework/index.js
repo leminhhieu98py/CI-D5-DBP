@@ -103,8 +103,51 @@
 // ---------------------------------------------------------------------------------------//
 // 7. Poker Flush?
 
+// // function to split the Suit of Pokers
+// function splitSuit(arr_input = []) {
+//     let newArr = [];
+//     arr_input.map(q => {
+//         newArr.push(q[q.length - 1])
+//     })
+//     return newArr;
+// }
+// // console.log(splitSuit(["A_S", "J_H", "7_D", "8_D", "10_D"]))
+// // function to count suit
+// function countSuit(suit_input = '', arr_input = []) {
+//     let count = 0;
+//     arr_input.map(q => {
+//         if (q == suit_input) {
+//             count++;
+//         }
+//     })
+//     return count;
+// }
+// // final function
+// function checkFlush(arr_5 = [], arr_2 = []) {
+//     let result = false;
+//     // split suit from arr
+//     let newArr_5 = splitSuit(arr_5);
+//     let newArr_2 = splitSuit(arr_2);
 
+//     // count and check flush
+//     if (newArr_2[0] == newArr_2[1]) {
+//         if (countSuit(newArr_2[0], newArr_5) > 2) {
+//             result = true;
+//         }
+//     } else {
+//         if (countSuit(newArr_2[0], newArr_5) > 3) {
+//             result = true;
+//         } else if (countSuit(newArr_2[1], newArr_5) > 3) {
+//             result = true;
+//         }
+//     }
+//     return result;
+// }
 
+// // test cases
+// console.log(checkFlush(["A_S", "J_H", "7_D", "8_D", "10_D"], ["J_D", "3_D"]));
+// console.log(checkFlush(["10_S", "7_S", "9_H", "4_S", "3_S"], ["K_S", "Q_S"]));
+// console.log(checkFlush(["3_S", "10_H", "10_D", "10_C", "10_S"], ["3_S", "4_D"]));
 // ---------------------------------------------------------------------------------------//
 // 8. Dice Gambling
 // function rolls(inputArr = []) {
